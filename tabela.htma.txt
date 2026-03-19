@@ -1,0 +1,18 @@
+< DOCTYPE> html
+< html  lang= "pt-br>
+< nead>
+< meta charset= "UTF_8">
+<meta name= viewport"=device-width, initial-5cale=1.0">
+<title>Document</title>
+<head>
+<body>
+<table  border="1" width="50%" align= cigd>
+<tr>
+<tr> Celula 1</td>
+<td>Celula2</td>
+<tr>
+   <td>Celula 3</td>
+<tr/>
+</table>
+</body>
+</html>
