@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>One Piece</title>
+
+    <script>
+        function trocarImagem(nome){
+            var img = document.getElementById("principal");
+
+            if(nome === "luffy"){
+                img.src = "https://upload.wikimedia.org/wikipedia/en/5/5a/Monkey_D._Luffy.png";
+            } 
+            else if(nome === "zoro"){
+                img.src = "https://upload.wikimedia.org/wikipedia/en/9/9a/Roronoa_Zoro.png";
+            } 
+            else if(nome === "sanji"){
+                img.src = "https://upload.wikimedia.org/wikipedia/en/6/65/Sanji.png";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<h1 align="center">Características principais</h1>
+
+<hr>
+
+<h3>Personagens favoritos</h3>
+<ul>
+    <li><a href="javascript:void(0)" onclick="trocarImagem('luffy')">Luffy</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarImagem('zoro')">Zoro</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarImagem('sanji')">Sanji</a></li>
+</ul>
+
+<hr>
+
+<h2 align="center">Personagem</h2>
+
+<img id="principal"
+src="https://upload.wikimedia.org/wikipedia/en/5/5a/Monkey_D._Luffy.png"
+width="300">
+
+<hr>
+
+<h3>Fotos</h3>
+<ul>
+    <li><a href="javascript:void(0)" onclick="trocarImagem('luffy')">Foto Luffy</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarImagem('zoro')">Foto Zoro</a></li>
+    <li><a href="javascript:void(0)" onclick="trocarImagem('sanji')">Foto Sanji</a></li>
+</ul>
+
+<hr>
+
+<h3>Curiosidades</h3>
+<p>Luffy: Quer ser o Rei dos Piratas.</p>
+<p>Zoro: Usa três espadas.</p>
+<p>Sanji: Luta com chutes.</p>
+
+</body>
+</html>
