@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>One Piece</title>
+
+    <script>
+        function mostrarPersonagem(nome) {
+            var img = document.getElementById("imagem");
+            var info = document.getElementById("rodape");
+
+            if (nome == "luffy") {
+                img.src = "luffy.jpeg";
+                info.innerHTML = "Luffy é o capitão dos Chapéus de Palha.";
+            }
+            if (nome == "zoro") {
+                img.src = "zoro.jpeg";
+                info.innerHTML = "Zoro é o espadachim do bando.";
+            }
+            if (nome == "sanji") {
+                img.src = "sanji.jpg";
+                info.innerHTML = "Sanji é o cozinheiro do bando.";
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+<table border="1" width="100%" bgcolor="cyan">
+
+    <!-- TOPO -->
+    <tr>
+        <td height="200px" colspan="3" bgcolor="red">
+            <img src="tripulação.jpeg" height="200px" width="100%">
+        </td>
+    </tr>
+
+    <!-- MEIO -->
+    <tr>
+        <!-- MENU ESQUERDO -->
+        <td width="20%" bgcolor="gold">
+            <ul>
+                <li><a href="#" onclick="mostrarPersonagem('luffy')">LUFFY</a></li>
+                <li><a href="#" onclick="mostrarPersonagem('zoro')">ZORO</a></li>
+                <li><a href="#" onclick="mostrarPersonagem('sanji')">SANJI</a></li>
+            </ul>
+        </td>
+
+        <!-- IMAGEM CENTRAL -->
+        <td width="60%" bgcolor="green">
+            <img id="imagem" src="one piece.webp" width="100%" height="500">
+        </td>
+
+        <!-- LINKS DIREITA -->
+        <td width="20%" bgcolor="chocolate">
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Monkey_D._Luffy" target="_blank">LUFFY</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Roronoa_Zoro" target="_blank">ZORO</a></li>
+                <li><a href="https://pt.wikipedia.org/wiki/Sanji" target="_blank">SANJI</a></li>
+            </ul>
+        </td>
+    </tr>
+
+    <!-- RODAPÉ -->
+    <tr>
+        <td colspan="3" align="center" bgcolor="white" id="rodape">
+            Clique em um personagem para ver informações
+        </td>
+    </tr>
+
+</table>
+
+</body>
+</html>
